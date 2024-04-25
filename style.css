@@ -23,6 +23,33 @@ header{
     height: 150px;
     width: auto;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.drop{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #0077b6;
+    width:300px;
+    height: 270px;
+    border-radius: 20px;
+}
+
+.drop .dp {
+    display: block;
+    font-size: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.drop .dp:hover{
+    color:white
+}
+
+.dropdown:hover .drop {display: block;}
+  
 
 ul{
     display: inline-block;
